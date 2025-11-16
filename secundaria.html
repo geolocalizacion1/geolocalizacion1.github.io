@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" class="light dark">
+
+<head>
+
+ <meta charset="UTF-8">
+ <title>Archivos - FilesCam</title>
+
+ <script src="js/registraServiceWorker.js"></script>
+
+ <meta name="viewport" content="width=device-width">
+ <meta name="theme-color" content="#fffbfe">
+ <link rel="icon" sizes="32x32" href="favicon.ico">
+ <link rel="manifest" href="site.webmanifest">
+ <script src="ungap/custom-elements.js"></script>
+
+ <script type="module" src="js/configura.js"></script>
+ <link rel="stylesheet" href="css/estilos.css">
+ <link rel="stylesheet" href="css/transicion_pestanas.css">
+
+</head>
+
+<body>
+
+ <md-top-app-bar adicional="tab" headline="headline">
+
+  <h1>Archivos</h1>
+
+ </md-top-app-bar>
+
+ <h1 id="headline">Archivos</h1>
+
+ <nav-tab-fixed id="tab"></nav-tab-fixed>
+
+ <main>
+   
+  <p>
+  <label class="md-filled-text-field float">
+   <span>Foto de Móvil</span>
+   <input type="file"
+     accept="image/*"
+     capture="camera">
+  </label>
+ </p>
+ <p>
+  <label class="md-filled-text-field float">
+   <span>Video de Móvil</span>
+   <input type="file"
+     accept="video/*"
+     capture="">
+  </label>
+ </p>
+ <p>
+  <label class="md-filled-text-field float">
+   <span>Archivo</span>
+   <input type="file">
+  </label>
+ </p>
+ </main>
+
+ <!-- <md-overflow-menu id="overflow">
+
+  <button type="button">
+   <span class="material-symbols-outlined">star</span>
+   Marcar favorito
+  </button>
+
+  <button type="button">
+   <span class="material-symbols-outlined"> delete</span>
+   Eliminar
+  </button>
+
+ </md-overflow-menu> -->
+
+<!-- <nav-drw></nav-drw> -->
+
+</body>
+
+</html>
